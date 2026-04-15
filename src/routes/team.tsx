@@ -59,12 +59,12 @@ function TeamPage() {
                 transition={{ duration: 0.5, delay: i * 0.15 }}
                 className="text-center p-8 rounded-xl bg-card border border-border hover-lift"
               >
-                <div className="w-24 h-24 rounded-full bg-secondary flex items-center justify-center mx-auto mb-4">
-                <img
-                  src={member.photo}
-                  alt={member.name}
-                  className="w-full h-full object-cover"
-                />
+                <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 border-2 border-gradient-primary">
+                  <img
+                    src={member.photo}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="font-display text-lg font-semibold text-foreground">{member.name}</h3>
                 <p className="text-primary text-sm mt-1">{member.role}</p>
